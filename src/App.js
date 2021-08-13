@@ -26,9 +26,9 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="App">
-        <div className="container-fluid bg">
-          <div className="row h-100vh opac">
+      <div className="App bg">
+        <div className="container-fluid opac">
+          <div className="row h-100vh">
             <div className="col-md-12 card-wrapper">
               { this.state.cardState === 0 && <NameInput onClick={(nickName, e) => this.nameInputHandler(e, nickName)}/> }
               { this.state.cardState === 1 && <GameTypeSelect nickName={this.state.nickName} onClick={(gameType, e) => this.clickHandler(e, gameType)}/> }
